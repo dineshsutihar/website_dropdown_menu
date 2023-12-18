@@ -1,3 +1,8 @@
+.right{
+  background-image:url(images/image-hero-mobile.png);
+}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -10,6 +15,6 @@
 /* Css for laptop */
 @media (min-width: 1440px) {
  .right{
-  background-image: url(images/bg-desktop-dark.jpg);
+  background-image: url(images/image-hero-desktop.png);
  }
 }
