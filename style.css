@@ -5,3 +5,11 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+/* Css for laptop */
+@media (min-width: 1440px) {
+ .right{
+  background-image: url(images/bg-desktop-dark.jpg);
+ }
+}
