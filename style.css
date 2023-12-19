@@ -2,8 +2,27 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 98%);
+  width:auto;
+}
 
-
+header{
+  display: flex;
+  width:100dvw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 .right{
@@ -30,4 +49,19 @@
   background-image: url(images/image-hero-desktop.png);
 
  }
+ header{
+  display: flex;
+  width:100svw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
 }
