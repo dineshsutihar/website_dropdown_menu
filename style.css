@@ -48,6 +48,21 @@ nav ul{
   justify-content: space-between;
   align-items: center;
 }
+/*Promotions logo  */
+.left-logos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* adjusting the width of all the image  */
+  width: 90%;
+  height:max-content;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.left-logos img{
+  width: 80px;
+  height:min-content;
+}
 
 
 .right {
