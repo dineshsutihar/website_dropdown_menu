@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
 }
+
+
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   font-size: 15px;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 98%);
+  /* background-color: hsl(0, 0%, 98%); */
   width: 100vw;
   height: 100vh;
 }
@@ -60,8 +63,22 @@ nav ul{
   padding-right: 1.5rem;
 }
 .left-logos img{
-  width: 80px;
-  height:min-content;
+  width: 70px;
+  height:max-content; /* Adjust this as needed */
+  object-fit: cover;
+}
+main{
+  width: auto;
+  height: auto;
+}
+.left{
+  color: #000;
+  padding: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.left h1{
+  
 }
 
 
