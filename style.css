@@ -50,12 +50,13 @@ nav ul{
 }
 
 
-/* .right{
-  background-image:url(images/image-hero-mobile.png);
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size: auto;
-} */
+.right {
+    background-image: url('images/image-hero-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height:auto;
+    width: auto; /* Adjust as needed */
+  }
 
 
 footer{
