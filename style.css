@@ -17,6 +17,8 @@ header{
   align-items: center;
   padding: 1rem 2rem;
 }
+
+
 nav ul{
   display: flex;
   list-style: none;
@@ -62,6 +64,14 @@ nav ul{
   justify-content: space-between;
   align-items: center;
   width: 50%;
+}
+
+.desk-head{
+  display: flex;
+  justify-content:baseline;
+  align-items: center;
+  width: 100%;
+  
 }
 
 }
