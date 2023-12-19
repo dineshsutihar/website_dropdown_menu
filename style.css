@@ -7,14 +7,19 @@ body{
   font-size: 15px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 98%);
-  width: 95%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 1rem 0;
+  align-items: stretch;
   
 }
 .nav-content{
@@ -28,7 +33,7 @@ header{
   cursor: pointer;
   z-index: 100;
   background-color: bisque;
-  position: relative;
+    position: relative;
 }
 .menu-open{
   display:block
