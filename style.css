@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-
-body{
-  font-family: 'Epilogue', sans-serif;
+body {
+  font-family: "Epilogue", sans-serif;
   font-size: 15px;
   /* background-color: hsl(0, 0%, 98%); */
   width: 100vw;
   height: 100vh;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,75 +22,71 @@ header{
   margin-right: 1.5rem;
   padding: 1rem 0;
   align-items: stretch;
-  
 }
-.nav-content{
+.nav-content {
   display: none;
 }
 
-.hamburger{
+.hamburger {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   z-index: 100;
   background-color: bisque;
-    position: relative;
+  position: relative;
 }
-.menu-open{
-  display:block
+.menu-open {
+  display: block;
 }
-.menu-close{
-  display:none;
+.menu-close {
+  display: none;
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: center;
 }
 /*Promotions logo  */
-.left-logos{
+.left-logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* adjusting the width of all the image  */
   width: 90%;
-  height:max-content;
+  height: max-content;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.left-logos img{
+.left-logos img {
   width: 70px;
-  height:max-content; /* Adjust this as needed */
+  height: max-content; /* Adjust this as needed */
   object-fit: cover;
 }
-main{
+main {
   width: auto;
   height: auto;
 }
-.left{
+.left {
   color: #000;
   padding: 1.5rem;
   text-align: center;
   line-height: 1.5rem;
 }
-.left h1{
-  
+.left h1 {
 }
 
-
 .right {
-    background-image: url('images/image-hero-mobile.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height:auto;
-    width: auto; /* Adjust as needed */
-  }
+  background-image: url("images/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: auto; /* Adjust as needed */
+}
 
-
-footer{
+footer {
   display: none; /*flex*/
   flex-direction: column;
   justify-content: center;
@@ -108,34 +103,30 @@ footer{
   color: hsl(228, 45%, 44%);
 }
 
-
 /* Css for laptop */
 @media (min-width: 1440px) {
- .right{
-  background-image: url(images/image-hero-desktop.png);
+  .right {
+    background-image: url(images/image-hero-desktop.png);
+  }
+  header {
+    display: flex;
+    width: 100svw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
 
- }
- header{
-  display: flex;
-  width:100svw;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-nav ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-}
-
-.desk-head{
-  display: flex;
-  justify-content:baseline;
-  align-items: center;
-  width: 100%;
-  
-}
-
+  .desk-head {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+  }
 }
