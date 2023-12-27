@@ -23,8 +23,36 @@ header {
   padding: 1rem 0;
   align-items: stretch;
 }
+/* overlay to make everything else dark */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust color and opacity as needed */
+  z-index: 50; /* Ensure this is below .nav-content */
+  display: none; /* Initially hidden */
+}
 .nav-content {
-  display: none;
+  opacity: 0;
+  position:absolute;
+  right: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items:flex-start;
+  margin-top: 40px;
+  margin-left: 20px;
+  height: 150px;
 }
 
 .hamburger {
@@ -33,24 +61,20 @@ header {
   justify-content: space-between;
   cursor: pointer;
   z-index: 100;
-  background-color: bisque;
+  /* background-color: bisque; */
   position: relative;
 }
-.menu-open {
-  display: block;
+.menu-open{
+  opacity: 1;
 }
 .menu-close {
-  display: none;
+  opacity: 0; 
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-}
+
 /*Promotions logo  */
 .left-logos {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,22 +92,46 @@ nav ul {
 main {
   width: auto;
   height: auto;
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 .left {
   color: #000;
-  padding: 1.5rem;
+  margin: 40px 0;
+  /* padding: 1.5rem; */
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 .left h1 {
+  font-size: 2.3rem;
+  margin: 25px 0;
+}
+.left p {
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  margin: 25px 0;
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 40px;
+}
+.btn{
+  
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+  padding: 17px 25px;
+  border-radius: 15px;
+  margin: 25px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border: none;
 }
 
-.right {
-  background-image: url("images/image-hero-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.right img {
+  margin-top: 10px;
+  width: 100%;
   height: auto;
-  width: auto; /* Adjust as needed */
+   /* Adjust as needed */
 }
 
 footer {
