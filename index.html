@@ -15,51 +15,101 @@
 
     <title>Dinesh | Intro section with dropdown navigation</title>
   </head>
-  <body class="overlay">
+  <body>
     <header>
       <div class="logo desk-head">
         <img src="./images/logo.svg" alt="logo" />
-      
-      <nav class="nav-content">
-        <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      </div>
-      <div class="login nav-content">
-        <a href="#">Login</a>
-        <a href="#">Register</a>
-      </div>
-        <div class="hamburger">
-          <img class="menu-open" src="./images/icon-menu.svg" alt="menu open" />
-          <img class="menu-close" src="./images/icon-close-menu.svg" alt="menu close" />
-        </div>
 
+        <nav class="nav-content">
+          <ul>
+            <li>
+              <a href="#"
+                >Features
+                <img
+                  class="arrow-down"
+                  src="images/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+                />
+                <img
+                  class="arrow-up"
+                  src="images/icon-arrow-up.svg"
+                  alt="icon-arrow-down"
+                />
+              </a>
+              <ul class="sub-dropdown">
+                <li>
+                  <img src="images/icon-todo.svg" alt="calender" />
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <img src="images/icon-calendar.svg" alt="chart" />
+                  <a href="#">Calender</a>
+                </li>
+                <li>
+                  <img src="images/icon-reminders.svg" alt="chart" />
+                  <a href="#">Remainders</a>
+                </li>
+                <li>
+                  <img src="images/icon-planning.svg" alt="chart" />
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Company
+                <img class="arrow-down" src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+                <img class="arrow-up" src="images/icon-arrow-up.svg" alt="icon-arrow-down"/>
+              </a>
+              <ul class="sub-dropdown">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="login">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="hamburger">
+        <img class="menu-open" src="./images/icon-menu.svg" alt="menu open" />
+        <img
+          class="menu-close"
+          src="./images/icon-close-menu.svg"
+          alt="menu close"
+        />
+      </div>
     </header>
 
     <main>
       <div class="left">
         <div class="left-text">
-        <h1>Make remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <botton class="btn">Learn more</botton>
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <botton class="btn">Learn more</botton>
+        </div>
+        <div class="left-logos">
+          <img src="./images/client-databiz.svg" alt="databiz" />
+          <img src="./images/client-audiophile.svg" alt="audiophile" />
+          <img src="./images/client-meet.svg" alt="meet" />
+          <img src="./images/client-maker.svg" alt="Maker" />
+        </div>
       </div>
-      <div class="left-logos">
-        <img src="./images/client-databiz.svg"  alt="databiz" />
-        <img src="./images/client-audiophile.svg" alt="audiophile" />
-        <img src="./images/client-meet.svg" alt="meet" />
-        <img src="./images/client-maker.svg" alt="Maker" />
-      </div>
-    </div>
 
       <div class="right">
-        <img class="mobile-image" src="images/image-hero-mobile.png" alt="Mobile hero banner">
+        <img
+          class="mobile-image"
+          src="images/image-hero-mobile.png"
+          alt="Mobile hero banner"
+        />
       </div>
     </main>
 

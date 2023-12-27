@@ -30,29 +30,66 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust color and opacity as needed */
+  
+  background-color: rgba(0, 0, 0, 0.46); /* Adjust color and opacity as needed */
   z-index: 50; /* Ensure this is below .nav-content */
-  display: none; /* Initially hidden */
+  /* display: none; Initially hidden */
 }
-.nav-content {
+.nav-content  {
   opacity: 0;
   position:absolute;
+  top: 0;
   right: 0;
-  width: 75%;
+  width: 70%;
   height: 100vh;
   background-color: #fff;
-  z-index: 100;
+  z-index: 10;
+  font-size: 1.2rem;
+  /* display: flex;
+  flex-direction: column; */
+  opacity: 1;
 }
 nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   justify-content: space-between;
-  font-size: 1.2rem;
+  
   align-items:flex-start;
-  margin-top: 40px;
+  margin-top: 90px;
   margin-left: 20px;
   height: 150px;
+  
+}
+.sub-dropdown{
+  margin-left: 40px;
+  margin-top: 10px;
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+.login{
+ /* position:absolute; */
+ /* height: fit-content; */
+  /* top: 290px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-self:center; */
+  /* gap: 30px; */
+}
+.login a:nth-child(2){
+  width: 80%;
+  height: 40px;
+  border: 1.2px solid black;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hamburger {
