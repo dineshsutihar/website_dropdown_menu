@@ -58,7 +58,7 @@ nav ul {
   margin-top: 80px;
   margin-left: 20px;
   margin-right: 20px;
-  max-width: 230px;
+  max-width: 250px;
   /* height: 150px; */
   
 }
@@ -79,7 +79,7 @@ nav ul li{
 }
 
 .sub-dropdown{
- 
+  display: none;
   margin-left: 40px;
   margin-top: 20px;
 }

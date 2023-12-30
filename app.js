@@ -7,6 +7,7 @@ const body = document.querySelector('body');
 const login = document.querySelector('.login');
 
 
+
 menuOpen.addEventListener('click', () => {
     // changing the display property of menuOpen and menuClose
     menuOpen.style.opacity = '0';
@@ -32,3 +33,30 @@ menuClose.addEventListener('click', () => {
     // overlay.style.display = "none";
 });
 
+
+// Select all parent li elements
+let parentItems = document.querySelectorAll('.nav-content > ul > li');
+
+
+// Add event listener to each parent li
+parentItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of the anchor tag
+
+        // Select the sub-dropdown of the clicked li
+        let subDropdown = this.querySelector('.sub-dropdown');
+        let arrowUp = document.querySelector('.arrow-up');
+        let arrowDown = document.querySelector('.arrow-down');
+
+        // Toggle the display of the sub-dropdown
+        if (subDropdown.style.display === 'none' || subDropdown.style.display === '') {
+            subDropdown.style.display = 'block';
+            arrowDown.style.display = 'none';
+            arrowUp.style.display = 'inline';
+        } else {
+            subDropdown.style.display = 'none';
+            arrowDown.style.display = 'inline';
+            arrowUp.style.display = 'none';
+        }
+    });
+});
