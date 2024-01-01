@@ -47,6 +47,9 @@ parentItems.forEach(item => {
         let subDropdown = this.querySelector('.sub-dropdown');
         let arrowUp = document.querySelector('.arrow-up');
         let arrowDown = document.querySelector('.arrow-down');
+        console.log(subDropdown.style.display);
+        console.log(subDropdown.style.display);
+
 
         // Toggle the display of the sub-dropdown
         if (subDropdown.style.display === 'none' || subDropdown.style.display === '') {
