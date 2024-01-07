@@ -230,4 +230,9 @@ footer {
     align-items: center;
     width: 100%;
   }
+  .desk-head img {
+    width: 100px;
+    height: max-content;
+  }
+  
 }
