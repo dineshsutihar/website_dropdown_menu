@@ -230,13 +230,13 @@ footer {
     align-items: center;
     width: 100%;
   }
-  .desk-head img {
+  /* .desk-head img {
     width: 100px;
     height: max-content;
   }
   .desk-head h1 {
     margin-left: 20px;
     font-size: 1.5rem;
-  }
+  } */
   
 }
