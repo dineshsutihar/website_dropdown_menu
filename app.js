@@ -55,12 +55,12 @@ parentItems.forEach(item => {
         // Toggle the display of the sub-dropdown
         if (subDropdown.style.display === 'none' || subDropdown.style.display === '') {
             subDropdown.style.display = 'block';
-            arrowDown.style.display = 'none';
-            arrowUp.style.display = 'inline';
+            this.querySelector('.arrow-down').style.display = 'none';
+            this.querySelector('.arrow-up').style.display = 'inline';
         } else {
             subDropdown.style.display = 'none';
-            arrowDown.style.display = 'inline';
-            arrowUp.style.display = 'none';
+            this.querySelector('.arrow-down').style.display = 'inline';
+            this.querySelector('.arrow-up').style.display = 'none';
         }
     });
 });
