@@ -228,6 +228,12 @@ footer {
     margin-bottom: 0;
     margin-right: 20px;
   }
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 
   .sub-dropdown {
     display: none;
@@ -240,7 +246,7 @@ footer {
     position: static;
     top: auto;
     right: auto;
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: transparent;
     font-size: 1.6rem; /* Adjust as needed */
@@ -259,8 +265,8 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: left;;
+    
   }
 
   .desk-head {
