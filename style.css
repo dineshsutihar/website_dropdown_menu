@@ -11,13 +11,14 @@ body {
   /* background-color: hsl(0, 0%, 98%); */
   width: 100vw;
   height: 100vh;
+  margin: 5px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1.4rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding: 1rem 0;
@@ -64,11 +65,11 @@ nav ul li{
   margin-bottom: 20px;
 }
 .arrow-down{
-  display: none;
+  display: inline;
 
 }
 .arrow-up{
-  display: inline;
+  display: none;
 }
 
 .arrow-down, .arrow-up{
