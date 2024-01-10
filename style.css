@@ -217,10 +217,50 @@ footer {
   }
   nav ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    margin: 0;
+    max-width: none;
+  }
+  nav ul li {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .sub-dropdown {
+    display: none;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .nav-content {
+    opacity: 1;
+    position: static;
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    font-size: 1.6rem; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .overlay{
+    display: none;
+  }
+
+  .login{
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .desk-head {
