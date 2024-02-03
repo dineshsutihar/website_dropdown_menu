@@ -95,19 +95,3 @@ document.getElementById("dark-cover").addEventListener("click", ()=> {
     document.getElementById("dark-cover").classList.toggle("active");
 })
 
-// document.getElementById("desktop-company-button").addEventListener("mouseover", ()=> {
-//     console.log("Working")
-//     document.getElementById("desktop-company-list").classList.add("active")
-// })
-
-// document.getElementById("desktop-company-list").addEventListener("mouseover", ()=> {
-//     document.getElementById("desktop-company-list").classList.add("active")
-// })
-
-// document.getElementById("desktop-company-list").addEventListener("mouseover", ()=> {
-//     document.getElementById("desktop-company-list").classList.add("active")
-// })
-
-// document.getElementById("desktop-company-button").addEventListener("mouseleave", ()=> {
-//     document.getElementById("desktop-company-list").classList.remove("active")
-// })
