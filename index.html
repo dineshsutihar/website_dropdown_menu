@@ -1,126 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="./app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <title>Snap | Make Remote Work</title>
+</head>
+<body>
+    <span class="mobile dark-cover" id="dark-cover"></span>
+    <nav>
+                <div class="first-half">
+                    <a href="#">
+                        <img src="./public/images/logo.svg" alt="snap logo" class="logo">
+                    </a>
 
-    <title>Dinesh | Intro section with dropdown navigation</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo desk-head">
-        <img src="./images/logo.svg" alt="logo" />
+                    <ul class="desktop-nav desktop">
+                        <li class="hover-button">
+                            <div id="desktop-company-button" class="company-hover-button">
+                                <button>
+                                    Company
+                                    <img src="./public/images/icon-arrow.svg" alt="arrow">
+                                </button>
+                                <div class="menu-container">
+                                    <span class="gap"></span>
+                                    <ul id="desktop-company-list" class="company-list">
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#7c3aec" d="M192 0c-41.8 0-77.4 26.7-90.5 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H282.5C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM112 192H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                                To-Do List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3b82f6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+                                                Calendar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fde047" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+                                                Reminder
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d948ef" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                                                Planning
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+                        </li>
+                        
+                        <li class="hover-button">
+                            <div id="desktop-company-button" class="company-hover-button">
+                                <button>
+                                    Features
+                                    <img src="./public/images/icon-arrow.svg" alt="arrow">
+                                </button>
+                                <div class="menu-container">
+                                    <span class="gap"></span>
+                                    <ul id="desktop-features-list" class="company-list">
+                                        <li>
+                                            <a href="#">
+                                                History
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Our Team
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Blog
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a> 
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="login-section desktop">
+                    <a href="#" class="login-link">Login</a>
+                    <a href="#" class="sign-up-link">Register</a>
+                </div>
 
-        <nav class="nav-content">
-          <ul>
-            <li>
-              <a href="#"
-                >Features
-                <img
-                  class="arrow-down"
-                  src="images/icon-arrow-down.svg"
-                  alt="icon-arrow-down"
-                />
-                <img
-                  class="arrow-up"
-                  src="images/icon-arrow-up.svg"
-                  alt="icon-arrow-down"
-                />
-              </a>
-              <ul class="sub-dropdown">
-                <li>
-                  <img src="images/icon-todo.svg" alt="calender" />
-                  <a href="#">Todo List</a>
-                </li>
-                <li>
-                  <img src="images/icon-calendar.svg" alt="chart" />
-                  <a href="#">Calender</a>
-                </li>
-                <li>
-                  <img src="images/icon-reminders.svg" alt="chart" />
-                  <a href="#">Remainders</a>
-                </li>
-                <li>
-                  <img src="images/icon-planning.svg" alt="chart" />
-                  <a href="#">Planning</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Company
-                <img class="arrow-down" src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
-                <img class="arrow-up" src="images/icon-arrow-up.svg" alt="icon-arrow-down"/>
-              </a>
-              <ul class="sub-dropdown">
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
-          
-          <div class="login">
-            <a href="#">Login</a>
-            <a href="#">Register</a>
-          </div>
-        </ul>
-        </nav>
-      </div>
-      
-      <div class="hamburger">
-        <img class="menu-open" src="./images/icon-menu.svg" alt="menu open" />
-        <img
-          class="menu-close"
-          src="./images/icon-close-menu.svg"
-          alt="menu close"
-        />
-      </div>
-    </header>
-
+                <div class="mobile-nav mobile">
+                    <button class="hamburger" id="hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </button>
+                    <div class="nav-popup" id="nav-popup">
+                        <div class="relative-container">
+                            <button class="close-button" id="mobile-menu-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                            </button>
+                            <ul class="list-menu">
+                                <li class="main-list-item">
+                                    <button class="main-menu-button" id="features-button">
+                                        Features
+                                        <img id="features-arrow" class="arrow" src="./public/images/icon-arrow.svg" alt="arrow">
+                                    </button>
+                                    <ul class="acc-list features" id="features-list">
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#7c3aec" d="M192 0c-41.8 0-77.4 26.7-90.5 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H282.5C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM112 192H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                                To-Do List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3b82f6" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+                                                Calendar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fde047" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+                                                Reminder
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d948ef" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                                                Planning
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                                <li class="main-list-item">
+                                    <button class="main-menu-button" id="company-button">
+                                        Company
+                                        <img  class="arrow" id="company-arrow" src="./public/images/icon-arrow.svg" alt="arrow">
+                                    </button>
+                                    <ul class="acc-list company" id="company-list">
+                                        <li>
+                                            <a href="#">
+                                                History
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Our Team
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Blog
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-list-item">
+                                    <a class="main-link-item" href="#">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li class="main-list-item">
+                                    <a class="main-link-item" href="#">
+                                        About
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mobile-login-register">
+                                <a href="#" class="mobile-login">Login</a>
+                                <a href="#" class="mobile-register">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </nav>
     <main>
-      <div class="left">
-        <div class="left-text">
-          <h1>Make remote work</h1>
-          <p>
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </p>
-          <button class="btn">Learn more</button>
+        <div class="hero">
+            <div class="hero-first-half">
+                <img src="./public/images/image-hero-mobile.png" alt="mobile hero banner" class="mobile-hero-banner mobile">
+                <h1>Make remote <span class="highlight">work</span></h1>
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and search productivity soar.</p>
+                <a href="#" class="link-button">Learn More!</a>
+            </div>
+            <ul class="companies">
+                <li><img src="./public/images/client-databiz.svg" alt="databiz-logo"></li>
+                <li><img src="./public/images/client-audiophile.svg" alt="client-audiophile"></li>
+                <li><img src="./public/images/client-maker.svg" alt="maker-logo"></li>
+                <li><img src="./public/images/client-meet.svg" alt="meet-logo"></li>
+            </ul>
         </div>
-        <div class="left-logos">
-          <img src="./images/client-databiz.svg" alt="databiz" />
-          <img src="./images/client-audiophile.svg" alt="audiophile" />
-          <img src="./images/client-meet.svg" alt="meet" />
-          <img src="./images/client-maker.svg" alt="Maker" />
-        </div>
-      </div>
-
-      <div class="right">
-        <img
-          class="mobile-image"
-          src="images/image-hero-mobile.png"
-          alt="Mobile hero banner"
-        />
-      </div>
+        <img src="./public/images/image-hero-desktop.png" alt="desktop hero image" class="desktop desktop-hero-img">
     </main>
-
+    
     <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Dinesh Kumar Sutihar</a>.
-      </div>
+        <p>Code written by <a href="#">Dinesh Sutihar</a></p>
+        <p>Project designed by <a href="#">Frontend Mentor</a></p>
     </footer>
-  </body>
+
+    <script src="app.js"></script>
+</body>
 </html>
